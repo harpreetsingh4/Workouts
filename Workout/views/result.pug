@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  .pb-2.mt-2.mb-4.border-bottom
+    h3 Result
+
+  -for(var prop in json.reverse())
+    h5 Workout: #{json[prop].name}
+    p Rep: #{json[prop].rep}
+    p Intensity: #{json[prop].intensity}
+    p Set: #{json[prop].set}
+    p Notes: #{json[prop].notes}
+    hr

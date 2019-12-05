@@ -1,0 +1,31 @@
+extends layout
+
+block content
+  .pb-2.mt-2.mb-4.border-bottom
+    h3 Workout Form
+
+  form(method='POST')
+    input(type='hidden', name='_csrf', value=_csrf)
+    .form-group.row
+      label(class='col-md-2 col-form-label font-weight-bold', for='Workout') Workout
+      .col-md-8
+        input.form-control(type='text', name='Workout', id='Workout', autocomplete='Workout', autofocus, required)
+    .form-group.row
+      label(class='col-md-2 col-form-label font-weight-bold', for='Rep') Rep
+      .col-md-8
+        input.form-control(type='text', name='Rep', id='Rep', autocomplete='Rep', autofocus, required)
+    .form-group.row
+      label(class='col-md-2 col-form-label font-weight-bold', for='Set') Set
+      .col-md-8
+        input.form-control(type='text', name='Set', id='Set', autocomplete='Set', autofocus, required)
+    .form-group.row
+      label(class='col-md-2 col-form-label font-weight-bold', for='Intensity') Intensity
+      .col-md-8
+        input.form-control(type='text', name='Intensity', id='Intensity', autocomplete='Intensity', autofocus, required)                             
+    .form-group.row
+      label(class='col-md-2 col-form-label font-weight-bold', for='message') Notes
+      .col-md-8
+        textarea.form-control(name='message', id='message', rows='7')
+    .form-group
+      .offset-md-2.col-md-8.p-1
+        button.btn.btn-primary(type='submit') Submit
