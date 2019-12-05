@@ -1,15 +1,19 @@
 #README
-=======================
+-------------
 
 ## Installation
-=================
+----------------
 open terminal run the following command  
-	sudo npm install
+```bash
+sudo npm install
+```
 
 ## Running
-=================
+----------------
 open terminal run the following command 
-	run "node app.js"
+```bash
+node app.js
+```
 
 # Overview
 -----------------
