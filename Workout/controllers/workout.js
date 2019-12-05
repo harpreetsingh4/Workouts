@@ -25,16 +25,7 @@ exports.postWorkout = (req, res) => {
         console.log(workout.name + " saved to db Workout");
     })
     res.redirect('back');
-    /*
-    const newWorkout = {
-        'workout': routeParams.Workout,
-        'rep': routeParams.Rep,
-        'intensity': routeParams.Intensity,
-        'notes': routeParams.message,
-        'set': routeParams.set
-    };
-    Workout.create(newWorkout, function(err, doc) {});
-    */
+
 };
 
 exports.putWorkout = (req, res) => {

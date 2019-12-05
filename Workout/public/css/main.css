@@ -12944,7 +12944,8 @@ footer {
   width: 100%;
   height: 45px;
   line-height: 45px; }
-  footer p, footer ul {
+  footer p,
+  footer ul {
     margin-bottom: 0; }
 
 textarea {

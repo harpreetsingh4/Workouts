@@ -1,21 +1,9 @@
 const passport = require('passport');
 const refresh = require('passport-oauth2-refresh');
 const axios = require('axios');
-
 const { Strategy: LocalStrategy } = require('passport-local');
-
-
-
-const { Strategy: GitHubStrategy } = require('passport-github');
-
-
 const { OAuth2Strategy: GoogleStrategy } = require('passport-google-oauth');
-const { Strategy: OpenIDStrategy } = require('passport-openid');
-const { OAuthStrategy } = require('passport-oauth');
-const { OAuth2Strategy } = require('passport-oauth');
-const _ = require('lodash');
 const moment = require('moment');
-
 const User = require('../models/User');
 
 passport.serializeUser((user, done) => {
@@ -64,9 +52,6 @@ passport.use(new LocalStrategy({ usernameField: 'email' }, (email, password, don
  *       - If there is, return an error message.
  *       - Else create a new account.
  */
-
-
-
 
 /**
  * Sign in with Google.

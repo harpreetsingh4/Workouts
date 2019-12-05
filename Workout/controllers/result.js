@@ -20,27 +20,6 @@ exports.getWorkout = (req, res) => {
 };
 
 
-/*
-exports.postWorkout = (req, res) => {
-    //console.log(req);
-    const routeParams = req.body;
-    console.log("----printing routeParams");
-    console.log(routeParams);
-    console.log("-------finished printing routeParams...");
-    var newWorkout = new Workout({
-        name: routeParams.Workout,
-        rep: routeParams.Rep,
-        intensity: routeParams.Intensity,
-        notes: routeParams.message,
-        set: routeParams.set
-    });
-    newWorkout.save(function(err, workout) {
-            if (err) return console.error(err);
-            console.log(workout.name + " saved to db Workout");
-        })
-};
-*/
-
 
 exports.putWorkout = (req, res) => {
     Workout.find((err, docs) => {
