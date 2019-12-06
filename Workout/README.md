@@ -1,5 +1,6 @@
 #README
 -------------
+Change directory into Workout
 
 ## Installation
 ----------------
@@ -17,13 +18,11 @@ node app.js
 
 # Overview
 -----------------
+This project is a Full Stack development project that utilize google oauth2 as a login as well as normal login which is on the passport.js file keys are in env.example file. Also the project uses boostraping which allows the web page to fit on any device because it is base template of css and js which can be found on the layout.pug file. The project will first bring you to home page which will only allow user to read the importance of fitness and login. After logining or creating account the user information is stored on mongodb atlas database which is a cloud scalable storage. Next, user can access the workout page where they can enter submit there workout which will be stored on the mongodb after that the user can view. Lastly, when when the user goes to the result page where it will pull all saved result from the database and print it out on the result page. 
+
 
 Project Structure
 -----------------
-Bootstrapping for wokring on smaller windows and large windows size. 
-Passport js for using oauth2 over google. 
-Data is stored on mongodb.atlas. 
-
 | Name                               | Description                                                  |
 | ---------------------------------- | ------------------------------------------------------------ |
 | **config**/passport.js             | Passport Local and OAuth strategies, plus login middleware.  |
